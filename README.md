@@ -9,9 +9,11 @@ A refactoring tool to assist with the transition to Swift 6 by handling the conv
 protocol P {}
 
 class C {
-    let p: P?
+    let p: P
+    let p2: [P]
+    let p3: [Int: P]
+    let p4: P & Q
     func f(p: P) -> P
-    func f2(f: () -> P?) -> Result<P, E>
 }
 ```
 
@@ -20,9 +22,11 @@ class C {
 protocol P {}
 
 class C {
-    let p: (any P)?
+    let p: any P
+    let p2: [any P]
+    let p3: [Int: any P]
+    let p4: any P & Q
     func f(p: any P) -> any P
-    func f2(f: () -> (any P)?) -> Result<any P, E>
 }
 ```
 
