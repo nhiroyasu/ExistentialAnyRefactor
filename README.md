@@ -1,5 +1,5 @@
 # ExistentialAnyRefactor
-A refactoring tool to assist with the transition to Swift 6 by handling the conversion to `ExistentialAny`.
+A refactoring tool to support the adoption of `ExistentialAny` in your Swift codebase.
 
 # Feature
 - This tool scans the specified Swift files for protocols and automatically adds the `any` keyword to all instances where those protocols are used.
